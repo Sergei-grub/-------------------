@@ -32,6 +32,12 @@
             stroke-width: 0.5;
         }
         
+        .st0_ {
+            fill: #84B0DA;
+            stroke: #ffffff;
+            stroke-width: 0.5;
+        }
+        
         .st0:hover,
         .groups:hover {
             transition: opacity 1s ease;
@@ -51,6 +57,19 @@
             border-radius: 10px;
             padding: 15px;
             transition: opacity .7s ease;
+        }
+        
+        .text_frame_description {
+            display: flex;
+            top: auto;
+            margin: auto;
+            align-items: center;
+            width: 800px;
+            max-width: 100%;
+            height: auto;
+            background: rgba(220, 240, 250, 0.9);
+            border-radius: 10px;
+            padding: 15px;
         }
         
         .heder_text_for_map {
@@ -628,15 +647,15 @@
 				578.9,310 582.3,310 583,307.8 584.9,307.8 586.7,306 589.1,304.8 587.6,303.2 589.4,302.4 589.4,301.1 587.4,300.1 587.7,298.3 
 				588.5,297.9 589,296.8 587.8,296.1 587.8,296.1 586.7,296.1 584.7,297.8 582.9,297.9 582.1,299.8 579.4,299.4 578.7,300.5 
 				577.6,301.7 576.4,302.3 574.2,303.1 572.3,303.6 570,302.4 568.8,302.7 567.4,301.5 564.8,300.5 562.1,298.7 560.1,297.9 
-				556.8,296.7 555.2,295.1 553.2,294.9 550.1,292.8 		" />
-						<polygon id="leningradskaya-oblast" class="st0" onmouseover="document.getElementById('leningradskaya').style.opacity=1" onmouseout="document.getElementById('leningradskaya').style.opacity=0" points="436.4,275.9 436.4,272.5 438,272.1 438.5,271.6 436.3,270.7 435,269.2 
+				556.8,296.7 555.2,295.1 553.2,294.9 550.1,292.8 		" />				
+				<polygon id="leningradskaya-oblast" class="st0" onmouseover="document.getElementById('leningradskaya').style.opacity=1" onmouseout="document.getElementById('leningradskaya').style.opacity=0" points="436.2,274.9 436.4,272.5 438,272.1 438.5,271.6 436.3,270.7 435,269.2 
 				435,269.2 444.2,269.2 444.2,272.2 445.3,275.9 449.1,286.9 451.4,288 452.9,290.6 454,294.8 452.5,297.9 451.2,299.5 
 				449.9,299.7 449.3,300.8 447.4,300.5 446.3,301.6 445.5,298.6 444.7,297.8 443.6,297.4 444.2,296.1 444.2,294.9 442.9,294.4 
 				442.8,293.2 441.3,293.1 440.5,293.9 439.3,292.6 439.7,289.9 438.8,289.7 437.8,288.7 436.8,289.5 435.8,289.8 434.2,289.1 
 				432.6,289 430.3,289 429.6,287.6 428.8,288 428,288.7 426.7,288.6 426.3,286.6 426.8,284.8 426.2,283.4 426.1,281.9 424.8,280.6 
-				425.4,279.2 424.2,277.8 426.2,276.6 429,277.2 429.4,275.7 430.3,274.8 432,275.6 433.4,277.1 435.6,277.8 436.4,279.6 436,280 
-				436,280.6 435.6,282.4 436.3,282.2 437.2,282.9 437.6,282.6 438,282.6 438.9,282.2 438.9,281.4 439.3,280.8 439.3,280 
-				439.1,279.7 438.4,280.5 438.2,277.5 		" />
+				425.4,279.2 424.2,277.8 426.2,276.6 429,277.2 429.4,275.7 430.3,274.8 432,275.6 433.4,277.1 434.6,277.5 434,279.6 434,280.7 
+				432.8,283.6 432.6,285.1 434.4,286.1 436.8,286.6 438.6,285.8 439.9,284.5 441.7,283.9 442.9,282.2 442.3,277.8 441.3,273.8 
+				438.9,273.2 		"/>
 						<polygon id="respublika-kareliya" class="st0" onmouseover="document.getElementById('kareliya').style.opacity=1" onmouseout="document.getElementById('kareliya').style.opacity=0" points="473.7,289.7 473.5,288.3 475.2,287.8 476,285.8 474,283.9 474.3,281.4 
 				474.8,280.2 476.1,279.6 476.7,278.2 476.6,276.6 477.2,275.9 477.9,276.9 478.4,276.5 479.4,277.2 480.7,275.4 482.2,272.8 
 				480.7,268.1 482.5,266.2 483.3,262.7 485.2,260.7 487.7,260 489.1,256.9 489.5,254.6 488.1,253.2 489.2,252.1 489.1,249.5 
@@ -725,11 +744,10 @@
 					545,258.8 545,258.8 544,258.8 542.9,257.2 542.3,257.5 540.4,255.7 538.9,254.1 539.5,252.5 540.9,252.1 541.5,251.1 
 					540.5,250.3 540.5,248.1 539.9,248 539.3,246.3 537.9,246.2 536.8,244.7 537.2,242.7 538.6,240.7 540.4,240.8 540.9,241.5 
 					541.6,241.8 541.8,240.6 			" />
-						</g>
-						<path id="sankt-peterburg" inkscape:connector-curvature="0"
-							sodipodi:nodetypes="ccccccccccccccccccc" class="st0" onmouseover="document.getElementById('sankt-peterburg').style.opacity=1" onmouseout="document.getElementById('sankt-peterburg').style.opacity=0" d="
-				M435.6,277.8l1.5,4.2l1.5-1.5l-1-3.7l-1.2-0.9l1.8-1.7l1.7,0.5l0.6,3.5l0.3,4l-0.6,1.4l-1.3,0.6l-0.8,1.2l-1.2,0.7l-1.5-0.4
-				l-1.1-0.9l0.1-1.3l0.8-2.6v-1.1L435.6,277.8z" />
+						</g>						
+						<path id="sankt-peterburg" inkscape:connector-curvature="0" sodipodi:nodetypes="ccccccccccccccccccc" class="st0" onmouseover="document.getElementById('peterburg').style.opacity=1" onmouseout="document.getElementById('peterburg').style.opacity=0" d="
+			M434.6,277.5l2.4,4.5l2.5-1.8l-0.4-3.8l-2.9-1.4l2.7-1.7l2.4,0.6l1,3.9l0.5,4.4l-1,1.6l-2,0.7l-1.3,1.3l-1.8,0.8l-2.4-0.5
+			l-1.7-1.1l0.2-1.4l1.2-3v-1.2L434.6,277.5z"/>
 					</g>
 					<g id="pfo">
 						<polygon id="orenburgskaya-oblast" class="st0" onmouseover="document.getElementById('orenburgskaya').style.opacity=1" onmouseout="document.getElementById('orenburgskaya').style.opacity=0" points="496.4,423.2 495.7,421.7 493.8,420.2 492.1,419.3 489.8,420.4 
@@ -876,7 +894,7 @@
 				l1.8-0.1l0.6-0.6l1.6,0.3l0.9,0.3l1-0.2l0.5-0.5l1.2,0.1h1.2l0-1.4l0.7-0.3l0.3-1l0.1-1.9l-0.8-0.8L442,336.2L442,336.2z
 				 M437.1,331.1l-0.6,0.9l0.2,1.1h-1.4l-0.4-0.4l-0.4-0.4l-0.7,0.7l-1,0.1l0.4-1.1v-0.9v-1l0.7,0.1l0.6-0.9l-0.2-0.5l0.6-0.6
 				l0.9-0.2l0,0.7l0.3,0.6l0,0.1l1,0.4l0.7,0.7L437.1,331.1L437.1,331.1z" />
-						<polygon id="moskva" class="st0" onmouseover="document.getElementById('moskva').style.opacity=1" onmouseout="document.getElementById('moskva').style.opacity=0" points="436.2,329.3 436.2,329.3 436.1,329.2 435.8,328.6 435.8,327.9 434.9,328.1 434.3,328.7 
+						<polygon id="gorod_moskva" class="st0" onmouseover="document.getElementById('moskva').style.opacity=1" onmouseout="document.getElementById('moskva').style.opacity=0" points="436.2,329.3 436.2,329.3 436.1,329.2 435.8,328.6 435.8,327.9 434.9,328.1 434.3,328.7 
 				434.5,329.2 433.9,330.2 433.2,330.1 433.2,331.1 433.2,332 432.8,333.1 433.8,333 434.5,332.3 434.9,332.7 435.3,333.1 
 				436.7,333.1 436.4,332 437.1,331.1 437.8,330.4 437.1,329.7 		" />
 						<polygon id="orlovskaya-oblast" class="st0" onmouseover="document.getElementById('orlovskaya').style.opacity=1" onmouseout="document.getElementById('orlovskaya').style.opacity=0" points="420.8,348.7 420.1,346.5 420.8,345.8 419,344.6 417.7,342.1 417,338.6 
@@ -1006,31 +1024,31 @@
 				382.4,407.7 382.1,406.6 380.8,406.2 380.3,406.4 379,406.1 379,406.1 378.4,405.1 377.3,404 376.7,404.2 376.7,405.2 
 				377.2,406.1 379.3,408.3 380.3,408.3 380.6,407.9 381.7,408.6 382.3,410 381.6,410.6 380.5,410.5 379.9,411.7 379,411.7 
 				379,413.4 379.4,414.3 379.1,415.1 376.9,415.1 376.1,414.8 375.3,415.7 		" />
-						<path id="respublika-krym" inkscape:connector-curvature="0" onmouseover="document.getElementById('respublika').style.opacity=1" onmouseout="document.getElementById('respublika').style.opacity=0" class="st0" d="M358.1,375.9l-0.5-0.5l-0.7-0.5l-0.5-0.4l-0.5-0.3
+						<path id="respublika-krym" inkscape:connector-curvature="0" onmouseover="document.getElementById('krym').style.opacity=1" onmouseout="document.getElementById('krym').style.opacity=0" class="st0" d="M358.1,375.9l-0.5-0.5l-0.7-0.5l-0.5-0.4l-0.5-0.3
 				l-1.9,0l-1.1,0.1l-0.9-0.5l-0.9-0.3l-0.5-0.3l-0.8,0.7l0.1,1l0.8,0.4l0.9,0.3l0.5,1.4l0.1,1.1L352,379l0.1,1.2l-0.4,1.2l-1.3,0.6
 				l-0.7,0.7l-1,0.1l-0.7,1.2l0.4,1.5l0.4,1.1l1.5,1l1.6-0.2l0.9-0.5l1.4-0.7l1,0.3l1.3,0.9l0.4,0.7l0.4,0.5l0.7,0.6l1.5,0.5l1.6,0
 				l1.8,0l0.7,1.5l0.4,1.1l2.1,1.4l2.1,0.4l0.7-1.2l1.7,0.3l-1.6-1.7l-0.2-0.7l-0.3-0.5l-0.3-0.3l-1.8-0.3l-2-1.1l-1.4-2.2l0.9-1.3
-				l0.4-1.9l-0.2-1.8l-0.3-0.2l-0.6-0.4l-0.1-0.3l0.4-1.9l-1-1l0-1.6l-1.2-0.2l-0.2,0.8l-1-0.1l-1.3,0.2L358.1,375.9z" />
-						<path id="sevastopol" inkscape:connector-curvature="0" class="st0" onmouseover="document.getElementById('sevastopol').style.opacity=1" onmouseout="document.getElementById('sevastopol').style.opacity=0" d="M348.1,384l0.4,1.3l0.3,0.9l2.3-1.3l-0.3-0.6l-0.1-0.5
-				l0.3-0.3l0.8,0.3l0.4-0.6l-0.5-0.6l0.2-0.4l0.5,0.1l0.1-0.6l-1-0.3l-1,0.5l-0.7,0.7l-1,0.1L348.1,384z" />
-						<polygon id="khersonskaya-oblast" class="st0" onmouseover="document.getElementById('khersonskaya').style.opacity=1" onmouseout="document.getElementById('khersonskaya').style.opacity=0" points="373.7,368.4 373,368.6 371.9,369.9 372.5,371.1 371.3,372.3 371.3,374.1 
+				l0.4-1.9l-0.2-1.8l-0.3-0.2l-0.6-0.4l-0.1-0.3l0.4-1.9l-1-1l0-1.6l-1.2-0.2l-0.2,0.8l-1-0.1l-1.3,0.2L358.1,375.9z" />				
+						<path id="gorod_sevastopol" inkscape:connector-curvature="0" class="st0" onmouseover="document.getElementById('sevastopol').style.opacity=1" onmouseout="document.getElementById('sevastopol').style.opacity=0" d="M348.1,384l0.4,1.5l0.4,1.1l1.5-0.4l0.7-1l-0.1-0.6
+				l0.3-0.4l0.8,0.3l0.5-0.7l-0.6-0.8l0.2-0.5l0.5,0.1l0.1-0.8l-1.1-0.5l-1.3,0.6l-0.7,0.7l-1,0.1L348.1,384z"/>
+						<polygon id="khersonskaya-oblast" class="st0_" onmouseover="document.getElementById('khersonskaya').style.opacity=1" onmouseout="document.getElementById('khersonskaya').style.opacity=0" points="373.7,368.4 373,368.6 371.9,369.9 372.5,371.1 371.3,372.3 371.3,374.1 
 				369.4,375.1 368.8,376.1 369.4,377.8 368.8,379.4 366.5,378.6 365.7,378 364.8,378.6 364,378 365.3,377.4 365.3,376.6 
 				364.5,376.7 364.6,375.4 363.6,376.1 362.8,374.7 362.5,375.9 361.3,375.7 361.3,374.2 360.2,374.7 360.2,372.7 358.9,371.7 
 				358.2,372.4 356.9,370.7 358.2,370.7 358,370.2 356.2,369 355.2,367.3 355.2,366 356.3,364.9 355.2,364.4 358.8,364 361.3,364.9 
 				362.7,364.4 364.5,363.7 364.8,365.3 366.1,365.6 366.8,364.4 367.5,364.4 368.2,363.4 368.8,364.9 369.8,364.9 369.8,366.4 
 				371.5,367 		" />
-						<polygon id="zaporozhskaya-oblast" class="st0" onmouseover="document.getElementById('zaporozhskaya').style.opacity=1" onmouseout="document.getElementById('zaporozhskaya').style.opacity=0" points="384.6,375.7 384,378.1 384.6,379.1 385.1,381 384.6,381.1 382.8,380.4 
+						<polygon id="zaporozhskaya-oblast" class="st0_" onmouseover="document.getElementById('zaporozhskaya').style.opacity=1" onmouseout="document.getElementById('zaporozhskaya').style.opacity=0" points="384.6,375.7 384,378.1 384.6,379.1 385.1,381 384.6,381.1 382.8,380.4 
 				381.8,381.5 381.7,383.1 380.3,383 380.3,383.9 377.5,384.7 377,384.2 378.3,383.6 377.5,382.7 376.5,382.6 374.7,382.8 
 				375.3,382.1 375.3,381.2 374.3,380.7 372.2,380.7 371.3,380.4 372.1,379.1 371.9,378.6 370.7,378.6 369.8,380.2 369.1,380.2 
 				368.8,379.4 369.4,377.8 368.8,376.1 369.4,375.1 371.3,374.1 371.3,372.3 372.5,371.1 371.9,369.9 373,368.6 374.4,368.2 
 				376.4,369.9 376.8,368.6 377.8,368.2 378.7,367 380.3,368.3 381.2,369 381.5,370.2 382.7,371.2 383.3,372.7 382.6,373.8 
 				382.9,375 		" />
-						<polygon id="doneckaya-oblast" class="st0" onmouseover="document.getElementById('doneckaya').style.opacity=1" onmouseout="document.getElementById('doneckaya').style.opacity=0" points="397.3,371.7 398.4,373.1 397.6,374.2 397.6,375.9 396.1,377.3 395.3,378.6 
+						<polygon id="doneckaya-oblast" class="st0_" onmouseover="document.getElementById('doneckaya').style.opacity=1" onmouseout="document.getElementById('doneckaya').style.opacity=0" points="397.3,371.7 398.4,373.1 397.6,374.2 397.6,375.9 396.1,377.3 395.3,378.6 
 				396,379.5 395,380.2 395.5,382.6 395,383.6 395.4,384.9 394.6,385.6 392.9,386.3 391,385.5 388.8,386.5 387.3,388.1 386,387.2 
 				385.6,385.3 383.3,384.2 382.2,384.7 380.3,383.9 380.3,383 381.7,383.1 381.8,381.5 382.8,380.4 384.6,381.1 385.1,381 
 				384.6,379.1 384,378.1 384.6,375.7 386,374.7 387.3,375.4 388.8,374.7 388.9,373.5 389.9,372.7 389.9,371.3 391.2,370.7 
 				392.3,371.8 393.9,371.8 		" />
-						<polygon id="luganskaya-oblast" class="st0" onmouseover="document.getElementById('luganskaya').style.opacity=1" onmouseout="document.getElementById('luganskaya').style.opacity=0" points="402.8,368.8 401.6,370.6 399.2,371.2 398.8,372.6 397.6,374.2 397.6,375.9 
+						<polygon id="luganskaya-oblast" class="st0_" onmouseover="document.getElementById('luganskaya').style.opacity=1" onmouseout="document.getElementById('luganskaya').style.opacity=0" points="402.8,368.8 401.6,370.6 399.2,371.2 398.8,372.6 397.6,374.2 397.6,375.9 
 				396.1,377.3 395.3,378.6 396,379.5 395,380.2 395.3,381.2 395.5,382.6 395,383.6 395.4,384.9 394.6,385.6 398.6,389.9 
 				400.8,387.7 402.3,386.8 401.9,384.6 403.3,383.2 404.8,383.4 404.7,381.8 408.4,381.3 409.1,379.6 409.9,378.6 408.2,377.8 
 				408.2,375.6 406.9,374.2 406.6,373.8 406,371.5 404.5,370.6 		" />
@@ -1211,9 +1229,614 @@
             <div class="num_for_map">8 722 руб.</div>
         </div>
     </div>
+    <div id="tyva" class="text_frame">
+        <p class="heder_text_for_map">Республика Тыва</p>
+        <div class="text_for_map">Стоимость продовольстия —&nbsp;
+            <div class="num_for_map">13 804 руб.</div>
+        </div>
+        <div class="text_for_map">Питание вне дома (на работе) —&nbsp;
+            <div class="num_for_map">6 728 руб.</div>
+        </div>
+    </div>
+    <div id="khakassiya" class="text_frame">
+        <p class="heder_text_for_map">Республика Хакассия</p>
+        <div class="text_for_map">Стоимость продовольстия —&nbsp;
+            <div class="num_for_map">13 568 руб.</div>
+        </div>
+        <div class="text_for_map">Питание вне дома (на работе) —&nbsp;
+            <div class="num_for_map">7 925 руб.</div>
+        </div>
+    </div>
+    <div id="tomskaya" class="text_frame">
+        <p class="heder_text_for_map">Томская область</p>
+        <div class="text_for_map">Стоимость продовольстия —&nbsp;
+            <div class="num_for_map">12 945 руб.</div>
+        </div>
+        <div class="text_for_map">Питание вне дома (на работе) —&nbsp;
+            <div class="num_for_map">9 065 руб.</div>
+        </div>
+    </div>
+    <div id="kurganskaya" class="text_frame">
+        <p class="heder_text_for_map">Курганская область</p>
+        <div class="text_for_map">Стоимость продовольстия —&nbsp;
+            <div class="num_for_map">12 320 руб.</div>
+        </div>
+        <div class="text_for_map">Питание вне дома (на работе) —&nbsp;
+            <div class="num_for_map">6 798 руб.</div>
+        </div>
+    </div>
+    <div id="sverdlovskaya" class="text_frame">
+        <p class="heder_text_for_map">Свердловская область</p>
+        <div class="text_for_map">Стоимость продовольстия —&nbsp;
+            <div class="num_for_map">13 407 руб.</div>
+        </div>
+        <div class="text_for_map">Питание вне дома (на работе) —&nbsp;
+            <div class="num_for_map">6 808 руб.</div>
+        </div>
+    </div>
+    <div id="tyumenskaya" class="text_frame">
+        <p class="heder_text_for_map">Тюменская область</p>
+        <div class="text_for_map">Стоимость продовольстия —&nbsp;
+            <div class="num_for_map">13 228 руб.</div>
+        </div>
+        <div class="text_for_map">Питание вне дома (на работе) —&nbsp;
+            <div class="num_for_map">7 442 руб.</div>
+        </div>
+    </div>
+    <div id="khanty-mansijskij" class="text_frame">
+        <p class="heder_text_for_map">Ханты-Мансийский авт.округ</p>
+        <div class="text_for_map">Стоимость продовольстия —&nbsp;
+            <div class="num_for_map">14 107 руб.</div>
+        </div>
+        <div class="text_for_map">Питание вне дома (на работе) —&nbsp;
+            <div class="num_for_map">10 143 руб.</div>
+        </div>
+    </div>
+    <div id="chelyabinskaya" class="text_frame">
+        <p class="heder_text_for_map">Челябинская область</p>
+        <div class="text_for_map">Стоимость продовольстия —&nbsp;
+            <div class="num_for_map">12 661 руб.</div>
+        </div>
+        <div class="text_for_map">Питание вне дома (на работе) —&nbsp;
+            <div class="num_for_map">8 432 руб.</div>
+        </div>
+    </div>
+    <div id="yamalo-neneckij" class="text_frame">
+        <p class="heder_text_for_map">Ямало-Ненецкий авт.округ</p>
+        <div class="text_for_map">Стоимость продовольстия —&nbsp;
+            <div class="num_for_map">16 068 руб.</div>
+        </div>
+        <div class="text_for_map">Питание вне дома (на работе) —&nbsp;
+            <div class="num_for_map">18 592 руб.</div>
+        </div>
+    </div>
+    <div id="kirovskaya" class="text_frame">
+        <p class="heder_text_for_map">Кировская область</p>
+        <div class="text_for_map">Стоимость продовольстия —&nbsp;
+            <div class="num_for_map">11 625 руб.</div>
+        </div>
+        <div class="text_for_map">Питание вне дома (на работе) —&nbsp;
+            <div class="num_for_map">6 134 руб.</div>
+        </div>
+    </div>
+    <div id="nizhegorodskaya" class="text_frame">
+        <p class="heder_text_for_map">Нижегородская область</p>
+        <div class="text_for_map">Стоимость продовольстия —&nbsp;
+            <div class="num_for_map">11 037 руб.</div>
+        </div>
+        <div class="text_for_map">Питание вне дома (на работе) —&nbsp;
+            <div class="num_for_map">8 221 руб.</div>
+        </div>
+    </div>
+    <div id="orenburgskaya" class="text_frame">
+        <p class="heder_text_for_map">Оренбургская область</p>
+        <div class="text_for_map">Стоимость продовольстия —&nbsp;
+            <div class="num_for_map">11 859 руб.</div>
+        </div>
+        <div class="text_for_map">Питание вне дома (на работе) —&nbsp;
+            <div class="num_for_map">5 811 руб.</div>
+        </div>
+    </div>
+    <div id="permskij" class="text_frame">
+        <p class="heder_text_for_map">Пермский край</p>
+        <div class="text_for_map">Стоимость продовольстия —&nbsp;
+            <div class="num_for_map">12 444 руб.</div>
+        </div>
+        <div class="text_for_map">Питание вне дома (на работе) —&nbsp;
+            <div class="num_for_map">9 065 руб.</div>
+        </div>
+    </div>
+    <div id="samarskaya" class="text_frame">
+        <p class="heder_text_for_map">Самарская область</p>
+        <div class="text_for_map">Стоимость продовольстия —&nbsp;
+            <div class="num_for_map">15 607 руб.</div>
+        </div>
+        <div class="text_for_map">Питание вне дома (на работе) —&nbsp;
+            <div class="num_for_map">6 945 руб.</div>
+        </div>
+    </div>
+    <div id="ulyanovskaya" class="text_frame">
+        <p class="heder_text_for_map">Ульяновская область</p>
+        <div class="text_for_map">Стоимость продовольстия —&nbsp;
+            <div class="num_for_map">11 700 руб.</div>
+        </div>
+        <div class="text_for_map">Питание вне дома (на работе) —&nbsp;
+            <div class="num_for_map">9 366 руб.</div>
+        </div>
+    </div>
+    <div id="bashkortostan" class="text_frame">
+        <p class="heder_text_for_map">Республика Башкортостан</p>
+        <div class="text_for_map">Стоимость продовольстия —&nbsp;
+            <div class="num_for_map">11 350 руб.</div>
+        </div>
+        <div class="text_for_map">Питание вне дома (на работе) —&nbsp;
+            <div class="num_for_map">5 811 руб.</div>
+        </div>
+    </div>
+    <div id="marij-ehl" class="text_frame">
+        <p class="heder_text_for_map">Республика Марий эл</p>
+        <div class="text_for_map">Стоимость продовольстия —&nbsp;
+            <div class="num_for_map">11 543 руб.</div>
+        </div>
+        <div class="text_for_map">Питание вне дома (на работе) —&nbsp;
+            <div class="num_for_map">5 187 руб.</div>
+        </div>
+    </div>
+    <div id="penzenskaya" class="text_frame">
+        <p class="heder_text_for_map">Пензенская область</p>
+        <div class="text_for_map">Стоимость продовольстия —&nbsp;
+            <div class="num_for_map">11 014 руб.</div>
+        </div>
+        <div class="text_for_map">Питание вне дома (на работе) —&nbsp;
+            <div class="num_for_map">6 375 руб.</div>
+        </div>
+    </div>
+    <div id="saratovskaya" class="text_frame">
+        <p class="heder_text_for_map">Саратовская область</p>
+        <div class="text_for_map">Стоимость продовольстия —&nbsp;
+            <div class="num_for_map">11 302 руб.</div>
+        </div>
+        <div class="text_for_map">Питание вне дома (на работе) —&nbsp;
+            <div class="num_for_map">6 898 руб.</div>
+        </div>
+    </div>
+    <div id="mordoviya" class="text_frame">
+        <p class="heder_text_for_map">Республика Мордовия</p>
+        <div class="text_for_map">Стоимость продовольстия —&nbsp;
+            <div class="num_for_map">10 609 руб.</div>
+        </div>
+        <div class="text_for_map">Питание вне дома (на работе) —&nbsp;
+            <div class="num_for_map">6 709 руб.</div>
+        </div>
+    </div>
+    <div id="tatarstan" class="text_frame">
+        <p class="heder_text_for_map">Республика Татарстан</p>
+        <div class="text_for_map">Стоимость продовольстия —&nbsp;
+            <div class="num_for_map">11 519 руб.</div>
+        </div>
+        <div class="text_for_map">Питание вне дома (на работе) —&nbsp;
+            <div class="num_for_map">5 811 руб.</div>
+        </div>
+    </div>
+    <div id="udmurtskaya" class="text_frame">
+        <p class="heder_text_for_map">Удмуртская республика</p>
+        <div class="text_for_map">Стоимость продовольстия —&nbsp;
+            <div class="num_for_map">11 807 руб.</div>
+        </div>
+        <div class="text_for_map">Питание вне дома (на работе) —&nbsp;
+            <div class="num_for_map">9 065 руб.</div>
+        </div>
+    </div>
+    <div id="chuvashskaya" class="text_frame">
+        <p class="heder_text_for_map">Чувашская республика</p>
+        <div class="text_for_map">Стоимость продовольстия —&nbsp;
+            <div class="num_for_map">11 459 руб.</div>
+        </div>
+        <div class="text_for_map">Питание вне дома (на работе) —&nbsp;
+            <div class="num_for_map">9 065 руб.</div>
+        </div>
+    </div>
+    <div id="arkhangelskaya" class="text_frame">
+        <p class="heder_text_for_map">Архангельская область</p>
+        <div class="text_for_map">Стоимость продовольстия —&nbsp;
+            <div class="num_for_map">14 883 руб.</div>
+        </div>
+        <div class="text_for_map">Питание вне дома (на работе) —&nbsp;
+            <div class="num_for_map">8 497 руб.</div>
+        </div>
+    </div>
+    <div id="vologodskaya" class="text_frame">
+        <p class="heder_text_for_map">Вологодская область</p>
+        <div class="text_for_map">Стоимость продовольстия —&nbsp;
+            <div class="num_for_map">13 795 руб.</div>
+        </div>
+        <div class="text_for_map">Питание вне дома (на работе) —&nbsp;
+            <div class="num_for_map">6 974 руб.</div>
+        </div>
+    </div>
+    <div id="kaliningradskaya" class="text_frame">
+        <p class="heder_text_for_map">Калининградская область</p>
+        <div class="text_for_map">Стоимость продовольстия —&nbsp;
+            <div class="num_for_map">13 430 руб.</div>
+        </div>
+        <div class="text_for_map">Питание вне дома (на работе) —&nbsp;
+            <div class="num_for_map">10 301 руб.</div>
+        </div>
+    </div>
+    <div id="leningradskaya" class="text_frame">
+        <p class="heder_text_for_map">Ленинградская область</p>
+        <div class="text_for_map">Стоимость продовольстия —&nbsp;
+            <div class="num_for_map">13 249 руб.</div>
+        </div>
+        <div class="text_for_map">Питание вне дома (на работе) —&nbsp;
+            <div class="num_for_map">7 495 руб.</div>
+        </div>
+    </div>
+    <div id="murmanskaya" class="text_frame">
+        <p class="heder_text_for_map">Мурманская область</p>
+        <div class="text_for_map">Стоимость продовольстия —&nbsp;
+            <div class="num_for_map">15 014 руб.</div>
+        </div>
+        <div class="text_for_map">Питание вне дома (на работе) —&nbsp;
+            <div class="num_for_map">9 835 руб.</div>
+        </div>
+    </div>
+    <div id="neneckij" class="text_frame">
+        <p class="heder_text_for_map">Ненецкий авт.округ</p>
+        <div class="text_for_map">Стоимость продовольстия —&nbsp;
+            <div class="num_for_map">16 278 руб.</div>
+        </div>
+        <div class="text_for_map">Питание вне дома (на работе) —&nbsp;
+            <div class="num_for_map">9 369 руб.</div>
+        </div>
+    </div>
+    <div id="novgorodskaya" class="text_frame">
+        <p class="heder_text_for_map">Новгородская область</p>
+        <div class="text_for_map">Стоимость продовольстия —&nbsp;
+            <div class="num_for_map">12 846 руб.</div>
+        </div>
+        <div class="text_for_map">Питание вне дома (на работе) —&nbsp;
+            <div class="num_for_map">7 059 руб.</div>
+        </div>
+    </div>
+    <div id="pskovskaya" class="text_frame">
+        <p class="heder_text_for_map">Псковская область</p>
+        <div class="text_for_map">Стоимость продовольстия —&nbsp;
+            <div class="num_for_map">12 920 руб.</div>
+        </div>
+        <div class="text_for_map">Питание вне дома (на работе) —&nbsp;
+            <div class="num_for_map">6 364 руб.</div>
+        </div>
+    </div>
+    <div id="kareliya" class="text_frame">
+        <p class="heder_text_for_map">Республика Карелия</p>
+        <div class="text_for_map">Стоимость продовольстия —&nbsp;
+            <div class="num_for_map">14 099 руб.</div>
+        </div>
+        <div class="text_for_map">Питание вне дома (на работе) —&nbsp;
+            <div class="num_for_map">12 446 руб.</div>
+        </div>
+    </div>
+    <div id="komi" class="text_frame">
+        <p class="heder_text_for_map">Республика Коми</p>
+        <div class="text_for_map">Стоимость продовольстия —&nbsp;
+            <div class="num_for_map">13 702 руб.</div>
+        </div>
+        <div class="text_for_map">Питание вне дома (на работе) —&nbsp;
+            <div class="num_for_map">8 867 руб.</div>
+        </div>
+    </div>
+    <div id="peterburg" class="text_frame">
+        <p class="heder_text_for_map">Санкт-Петербург</p>
+        <div class="text_for_map">Стоимость продовольстия —&nbsp;
+            <div class="num_for_map">14 291 руб.</div>
+        </div>
+        <div class="text_for_map">Питание вне дома (на работе) —&nbsp;
+            <div class="num_for_map">9 678 руб.</div>
+        </div>
+    </div>
+    <div id="belgorodskaya" class="text_frame">
+        <p class="heder_text_for_map">Белгородская область</p>
+        <div class="text_for_map">Стоимость продовольстия —&nbsp;
+            <div class="num_for_map">10 631 руб.</div>
+        </div>
+        <div class="text_for_map">Питание вне дома (на работе) —&nbsp;
+            <div class="num_for_map">5 431 руб.</div>
+        </div>
+    </div>
+    <div id="bryanskaya" class="text_frame">
+        <p class="heder_text_for_map">Брянская область</p>
+        <div class="text_for_map">Стоимость продовольстия —&nbsp;
+            <div class="num_for_map">12 772 руб.</div>
+        </div>
+        <div class="text_for_map">Питание вне дома (на работе) —&nbsp;
+            <div class="num_for_map">6 763 руб.</div>
+        </div>
+    </div>
+    <div id="vladimirskaya" class="text_frame">
+        <p class="heder_text_for_map">Владимирская область</p>
+        <div class="text_for_map">Стоимость продовольстия —&nbsp;
+            <div class="num_for_map">12 839 руб.</div>
+        </div>
+        <div class="text_for_map">Питание вне дома (на работе) —&nbsp;
+            <div class="num_for_map">9 668 руб.</div>
+        </div>
+    </div>
+    <div id="voronezhskaya" class="text_frame">
+        <p class="heder_text_for_map">Воронежская область</p>
+        <div class="text_for_map">Стоимость продовольстия —&nbsp;
+            <div class="num_for_map">11 087 руб.</div>
+        </div>
+        <div class="text_for_map">Питание вне дома (на работе) —&nbsp;
+            <div class="num_for_map">6 797 руб.</div>
+        </div>
+    </div>
+    <div id="ivanovskaya" class="text_frame">
+        <p class="heder_text_for_map">Ивановская область</p>
+        <div class="text_for_map">Стоимость продовольстия —&nbsp;
+            <div class="num_for_map">12 828 руб.</div>
+        </div>
+        <div class="text_for_map">Питание вне дома (на работе) —&nbsp;
+            <div class="num_for_map">6 350 руб.</div>
+        </div>
+    </div>
+    <div id="kaluzhskaya" class="text_frame">
+        <p class="heder_text_for_map">Калужская область</p>
+        <div class="text_for_map">Стоимость продовольстия —&nbsp;
+            <div class="num_for_map">12 434 руб.</div>
+        </div>
+        <div class="text_for_map">Питание вне дома (на работе) —&nbsp;
+            <div class="num_for_map">6 899 руб.</div>
+        </div>
+    </div>
+    <div id="kostromskaya" class="text_frame">
+        <p class="heder_text_for_map">Костромская область</p>
+        <div class="text_for_map">Стоимость продовольстия —&nbsp;
+            <div class="num_for_map">12 073 руб.</div>
+        </div>
+        <div class="text_for_map">Питание вне дома (на работе) —&nbsp;
+            <div class="num_for_map">6 210 руб.</div>
+        </div>
+    </div>
+    <div id="kurskaya" class="text_frame">
+        <p class="heder_text_for_map">Курская область</p>
+        <div class="text_for_map">Стоимость продовольстия —&nbsp;
+            <div class="num_for_map">11 164 руб.</div>
+        </div>
+        <div class="text_for_map">Питание вне дома (на работе) —&nbsp;
+            <div class="num_for_map">6 610 руб.</div>
+        </div>
+    </div>
+    <div id="lipeckaya" class="text_frame">
+        <p class="heder_text_for_map">Липецкая область</p>
+        <div class="text_for_map">Стоимость продовольстия —&nbsp;
+            <div class="num_for_map">10 601 руб.</div>
+        </div>
+        <div class="text_for_map">Питание вне дома (на работе) —&nbsp;
+            <div class="num_for_map">9 065 руб.</div>
+        </div>
+    </div>
+    <div id="moskva" class="text_frame">
+        <p class="heder_text_for_map">Москва</p>
+        <div class="text_for_map">Стоимость продовольстия —&nbsp;
+            <div class="num_for_map">14 875 руб.</div>
+        </div>
+        <div class="text_for_map">Питание вне дома (на работе) —&nbsp;
+            <div class="num_for_map">19 201 руб.</div>
+        </div>
+    </div>
+    <div id="moskovskaya" class="text_frame">
+        <p class="heder_text_for_map">Московская область</p>
+        <div class="text_for_map">Стоимость продовольстия —&nbsp;
+            <div class="num_for_map">13 327 руб.</div>
+        </div>
+        <div class="text_for_map">Питание вне дома (на работе) —&nbsp;
+            <div class="num_for_map">10 586 руб.</div>
+        </div>
+    </div>
+    <div id="orlovskaya" class="text_frame">
+        <p class="heder_text_for_map">Орловская область</p>
+        <div class="text_for_map">Стоимость продовольстия —&nbsp;
+            <div class="num_for_map">12 199 руб.</div>
+        </div>
+        <div class="text_for_map">Питание вне дома (на работе) —&nbsp;
+            <div class="num_for_map">5 866 руб.</div>
+        </div>
+    </div>
+    <div id="ryazanskaya" class="text_frame">
+        <p class="heder_text_for_map">Рязанская область</p>
+        <div class="text_for_map">Стоимость продовольстия —&nbsp;
+            <div class="num_for_map">11 849 руб.</div>
+        </div>
+        <div class="text_for_map">Питание вне дома (на работе) —&nbsp;
+            <div class="num_for_map">6 468 руб.</div>
+        </div>
+    </div>
+    <div id="smolenskaya" class="text_frame">
+        <p class="heder_text_for_map">Смоленская область</p>
+        <div class="text_for_map">Стоимость продовольстия —&nbsp;
+            <div class="num_for_map">12 447 руб.</div>
+        </div>
+        <div class="text_for_map">Питание вне дома (на работе) —&nbsp;
+            <div class="num_for_map">8 712 руб.</div>
+        </div>
+    </div>
+    <div id="tambovskaya" class="text_frame">
+        <p class="heder_text_for_map">Тамбовская область</p>
+        <div class="text_for_map">Стоимость продовольстия —&nbsp;
+            <div class="num_for_map">11 047 руб.</div>
+        </div>
+        <div class="text_for_map">Питание вне дома (на работе) —&nbsp;
+            <div class="num_for_map">5 851 руб.</div>
+        </div>
+    </div>
+    <div id="tverskaya" class="text_frame">
+        <p class="heder_text_for_map">Тверская область</p>
+        <div class="text_for_map">Стоимость продовольстия —&nbsp;
+            <div class="num_for_map">13 011 руб.</div>
+        </div>
+        <div class="text_for_map">Питание вне дома (на работе) —&nbsp;
+            <div class="num_for_map">11 905 руб.</div>
+        </div>
+    </div>
+    <div id="tulskaya" class="text_frame">
+        <p class="heder_text_for_map">Тульская область</p>
+        <div class="text_for_map">Стоимость продовольстия —&nbsp;
+            <div class="num_for_map">12 280 руб.</div>
+        </div>
+        <div class="text_for_map">Питание вне дома (на работе) —&nbsp;
+            <div class="num_for_map">10 750 руб.</div>
+        </div>
+    </div>
+    <div id="yaroslavskaya" class="text_frame">
+        <p class="heder_text_for_map">Ярославская область</p>
+        <div class="text_for_map">Стоимость продовольстия —&nbsp;
+            <div class="num_for_map">12 814 руб.</div>
+        </div>
+        <div class="text_for_map">Питание вне дома (на работе) —&nbsp;
+            <div class="num_for_map">6 769 руб.</div>
+        </div>
+    </div>
+    <div id="astrakhanskaya" class="text_frame">
+        <p class="heder_text_for_map">Астраханская область</p>
+        <div class="text_for_map">Стоимость продовольстия —&nbsp;
+            <div class="num_for_map">12 295 руб.</div>
+        </div>
+        <div class="text_for_map">Питание вне дома (на работе) —&nbsp;
+            <div class="num_for_map">6 962 руб.</div>
+        </div>
+    </div>
+    <div id="volgogradskaya" class="text_frame">
+        <p class="heder_text_for_map">Волгоградская область</p>
+        <div class="text_for_map">Стоимость продовольстия —&nbsp;
+            <div class="num_for_map">11 151 руб.</div>
+        </div>
+        <div class="text_for_map">Питание вне дома (на работе) —&nbsp;
+            <div class="num_for_map">6 686 руб.</div>
+        </div>
+    </div>
+    <div id="krasnodarskij" class="text_frame">
+        <p class="heder_text_for_map">Краснодарский край</p>
+        <div class="text_for_map">Стоимость продовольстия —&nbsp;
+            <div class="num_for_map">12 897 руб.</div>
+        </div>
+        <div class="text_for_map">Питание вне дома (на работе) —&nbsp;
+            <div class="num_for_map">9 046 руб.</div>
+        </div>
+    </div>
+    <div id="adygeya" class="text_frame">
+        <p class="heder_text_for_map">Республика Адыгея</p>
+        <div class="text_for_map">Стоимость продовольстия —&nbsp;
+            <div class="num_for_map">11 059 руб.</div>
+        </div>
+        <div class="text_for_map">Питание вне дома (на работе) —&nbsp;
+            <div class="num_for_map">6 043 руб.</div>
+        </div>
+    </div>
+    <div id="kalmykiya" class="text_frame">
+        <p class="heder_text_for_map">Республика Калмыкия</p>
+        <div class="text_for_map">Стоимость продовольстия —&nbsp;
+            <div class="num_for_map">11 857 руб.</div>
+        </div>
+        <div class="text_for_map">Питание вне дома (на работе) —&nbsp;
+            <div class="num_for_map">7 947 руб.</div>
+        </div>
+    </div>
+    <div id="krym" class="text_frame">
+        <p class="heder_text_for_map">Республика Крым</p>
+        <div class="text_for_map">Стоимость продовольстия —&nbsp;
+            <div class="num_for_map">13 304 руб.</div>
+        </div>
+        <div class="text_for_map">Питание вне дома (на работе) —&nbsp;
+            <div class="num_for_map">12 080 руб.</div>
+        </div>
+    </div>
+    <div id="rostovskaya" class="text_frame">
+        <p class="heder_text_for_map">Ростовская область</p>
+        <div class="text_for_map">Стоимость продовольстия —&nbsp;
+            <div class="num_for_map">12 365 руб.</div>
+        </div>
+        <div class="text_for_map">Питание вне дома (на работе) —&nbsp;
+            <div class="num_for_map">9 435 руб.</div>
+        </div>
+    </div>
+    <div id="sevastopol" class="text_frame">
+        <p class="heder_text_for_map">Севастополь</p>
+        <div class="text_for_map">Стоимость продовольстия —&nbsp;
+            <div class="num_for_map">13 436 руб.</div>
+        </div>
+        <div class="text_for_map">Питание вне дома (на работе) —&nbsp;
+            <div class="num_for_map">7 488 руб.</div>
+        </div>
+    </div>
+    <div id="kabardino" class="text_frame">
+        <p class="heder_text_for_map">Кабардино-Балкарская республика</p>
+        <div class="text_for_map">Стоимость продовольстия —&nbsp;
+            <div class="num_for_map">12 362 руб.</div>
+        </div>
+        <div class="text_for_map">Питание вне дома (на работе) —&nbsp;
+            <div class="num_for_map">7 300 руб.</div>
+        </div>
+    </div>
+    <div id="dagestan" class="text_frame">
+        <p class="heder_text_for_map">Республика Дагестан</p>
+        <div class="text_for_map">Стоимость продовольстия —&nbsp;
+            <div class="num_for_map">12 111 руб.</div>
+        </div>
+        <div class="text_for_map">Питание вне дома (на работе) —&nbsp;
+            <div class="num_for_map">14 990 руб.</div>
+        </div>
+    </div>
+    <div id="ingushetiya" class="text_frame">
+        <p class="heder_text_for_map">Республика Ингушетия</p>
+        <div class="text_for_map">Стоимость продовольстия —&nbsp;
+            <div class="num_for_map">11 587 руб.</div>
+        </div>
+        <div class="text_for_map">Питание вне дома (на работе) —&nbsp;
+            <div class="num_for_map">4 643 руб.</div>
+        </div>
+    </div>
+    <div id="cherkessiya" class="text_frame">
+        <p class="heder_text_for_map">Республика Карачаево-Черкессия</p>
+        <div class="text_for_map">Стоимость продовольстия —&nbsp;
+            <div class="num_for_map">17 776 руб.</div>
+        </div>
+        <div class="text_for_map">Питание вне дома (на работе) —&nbsp;
+            <div class="num_for_map">8 674 руб.</div>
+        </div>
+    </div>
+    <div id="osetiya" class="text_frame">
+        <p class="heder_text_for_map">Республика Северная Осетия</p>
+        <div class="text_for_map">Стоимость продовольстия —&nbsp;
+            <div class="num_for_map">12 287 руб.</div>
+        </div>
+        <div class="text_for_map">Питание вне дома (на работе) —&nbsp;
+            <div class="num_for_map">9 076 руб.</div>
+        </div>
+    </div>
+    <div id="stavropolskij" class="text_frame">
+        <p class="heder_text_for_map">Ставропольский край</p>
+        <div class="text_for_map">Стоимость продовольстия —&nbsp;
+            <div class="num_for_map">12 586 руб.</div>
+        </div>
+        <div class="text_for_map">Питание вне дома (на работе) —&nbsp;
+            <div class="num_for_map">6 618 руб.</div>
+        </div>
+    </div>
+    <div id="chechenskaya" class="text_frame">
+        <p class="heder_text_for_map">Чеченская республика</p>
+        <div class="text_for_map">Стоимость продовольстия —&nbsp;
+            <div class="num_for_map">12 434 руб.</div>
+        </div>
+        <div class="text_for_map">Питание вне дома (на работе) —&nbsp;
+            <div class="num_for_map">11 695 руб.</div>
+        </div>
+    </div>
 
+    <div class="text_frame_description">
+        <div class="text_for_map">Описание исследования:</div>
+    </div>
 
 </body>
-
 
 </html>
